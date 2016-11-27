@@ -6,8 +6,7 @@ public class Book {
 
     private String author;
 
-    private String name;
-
+    private String title;
 
     public Integer getId() {
         return id;
@@ -25,11 +24,11 @@ public class Book {
         this.author = author;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

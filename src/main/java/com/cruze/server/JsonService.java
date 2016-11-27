@@ -19,7 +19,7 @@ public class JsonService {
         Book book = new Book();
         book.setId(999);
         book.setAuthor("Hello");
-        book.setName("World");
+        book.setTitle("World");
 
         return book;
     }
@@ -29,7 +29,7 @@ public class JsonService {
     @Consumes("application/json")
     public Response createProductInJSON(Book book) {
 
-        String result = "Book created : " + book;
+        String result = "Book created : " + book.getTitle();
         return Response.status(201).entity(result).build();
 
     }
